@@ -69,7 +69,7 @@ if uploaded_file:
             # Splitting Logic
             with st.spinner("Processing..."):
                 def split_to_chunks(text, m_len):
-                    return textwrap.wrap(str(text), width=m_len) if pd.notna(text) else []
+                    return textwrap.wrap(str(text), width=m_len,break_long_words = False) if pd.notna(text) else []
                 
                 chunks = df[column_to_split].apply(lambda x: split_to_chunks(x, max_length))
                 new_cols = pd.DataFrame(chunks.tolist())
