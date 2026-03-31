@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import textwrap
 import io
+from xlsxwriter import Workbook
 
 # --- Page Configuration ---
 st.set_page_config(page_title="Text Splitter Pro", page_icon="✂️", layout="wide")
