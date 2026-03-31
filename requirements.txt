@@ -1,7 +1,6 @@
 streamlit
 pandas
 openpyxl
-xlsxwriter
 textwrap
 io
 numpy
