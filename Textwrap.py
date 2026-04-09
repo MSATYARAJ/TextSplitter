@@ -16,7 +16,7 @@ def clear_all_data():
     """Increments the key to force a reset of all widgets."""
     st.session_state.uploader_key += 1
     # st.rerun() ensures the app reflects the change immediately
-    st.rerun()
+    # st.rerun()
 
 # --- Custom Styling ---
 st.markdown("""
